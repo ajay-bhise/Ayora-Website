@@ -9,7 +9,7 @@ import { capabilities } from "@/lib/content/capabilities";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "AYORA's enterprise AI and technology consulting services — from generative AI and AI agents to Microsoft Copilot, intelligent automation, and custom AI application development.",
+    "AYORA's enterprise AI and technology consulting services - from generative AI and AI agents to Microsoft Copilot, intelligent automation, and custom AI application development.",
 };
 
 export default function ServicesPage() {

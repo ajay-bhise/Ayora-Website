@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "AYORA — Enterprise AI & Technology Consulting",
+    default: "AYORA - Enterprise AI & Technology Consulting",
     template: "%s | AYORA",
   },
   description:

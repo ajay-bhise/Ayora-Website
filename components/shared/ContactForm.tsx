@@ -17,7 +17,6 @@ export default function ContactForm() {
     company: "",
     message: "",
   });
-  const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState("");
 
   function handleChange(
@@ -32,9 +31,19 @@ export default function ContactForm() {
       setError("Please fill in all required fields.");
       return;
     }
-    // TODO: Wire up to a form submission service (e.g. Formspree, Resend, or custom API route)
-    setSubmitted(true);
     setError("");
+
+    const subject = `Enquiry from ${form.name}${form.company ? ` (${form.company})` : ""}`;
+    const body = [
+      `Name: ${form.name}`,
+      `Email: ${form.email}`,
+      `Company: ${form.company || "-"}`,
+      "",
+      "Message:",
+      form.message,
+    ].join("\r\n");
+
+    window.location.href = `mailto:contactayoraai@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   }
 
   const inputClass = `
@@ -48,32 +57,6 @@ export default function ContactForm() {
     borderColor: "var(--border)",
     color: "var(--fg)",
   };
-
-  if (submitted) {
-    return (
-      <div
-        className="rounded-xl border p-8 flex flex-col gap-4 text-center"
-        style={{
-          background: "var(--bg-surface)",
-          borderColor: "var(--border)",
-        }}
-      >
-        <div
-          className="mx-auto flex items-center justify-center w-12 h-12 rounded-full"
-          style={{ background: "var(--brand-dim)" }}
-        >
-          <svg className="w-6 h-6" viewBox="0 0 20 20" fill="currentColor"
-            style={{ color: "var(--brand)" }}>
-            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
-          </svg>
-        </div>
-        <h3 className="text-lg font-semibold text-foreground">Message received</h3>
-        <p className="text-sm" style={{ color: "var(--fg-secondary)" }}>
-          Thank you for reaching out. We&apos;ll be in touch within one business day.
-        </p>
-      </div>
-    );
-  }
 
   return (
     <form onSubmit={handleSubmit} noValidate className="flex flex-col gap-5">
@@ -161,6 +144,9 @@ export default function ContactForm() {
       <Button type="submit" variant="primary" size="lg" className="w-full sm:w-auto">
         Send Message
       </Button>
+      <p className="text-xs" style={{ color: "var(--fg-muted)" }}>
+        This opens your email app with your message pre-filled. Press Send there to deliver it.
+      </p>
     </form>
   );
 }

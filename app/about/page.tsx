@@ -13,7 +13,7 @@ const values = [
   {
     title: "Honest about what AI can do",
     description:
-      "We won't oversell capabilities or timelines. When a use case isn't ready for AI, we'll tell you — and help you get ready.",
+      "We won't oversell capabilities or timelines. When a use case isn't ready for AI, we'll tell you - and help you get ready.",
   },
   {
     title: "Enterprise discipline",
@@ -23,7 +23,7 @@ const values = [
   {
     title: "Client capability first",
     description:
-      "Our goal is to leave every client more capable than before we arrived — not to create dependency on AYORA.",
+      "Our goal is to leave every client more capable than before we arrived - not to create dependency on AYORA.",
   },
   {
     title: "Outcomes over outputs",
@@ -56,7 +56,7 @@ export default function AboutPage() {
               <div className="flex flex-col gap-4 text-base leading-relaxed"
                 style={{ color: "var(--fg-secondary)" }}>
                 <p>
-                  The gap between what AI can do and what organisations actually deploy is large — and growing. It isn&apos;t a technology problem. It&apos;s a delivery problem: choosing the right approach, integrating with existing systems, navigating governance requirements, and building the internal confidence to commit.
+                  The gap between what AI can do and what organisations actually deploy is large - and growing. It isn&apos;t a technology problem. It&apos;s a delivery problem: choosing the right approach, integrating with existing systems, navigating governance requirements, and building the internal confidence to commit.
                 </p>
                 <p>
                   AYORA was founded to close that gap. We bring together AI engineering expertise, enterprise delivery discipline, and a straightforward approach to getting AI into production.
@@ -83,24 +83,6 @@ export default function AboutPage() {
                 ))}
               </div>
             </div>
-          </div>
-        </Container>
-      </section>
-
-      {/* Team placeholder */}
-      <section className="py-20" style={{ background: "var(--bg-section)" }}>
-        <Container>
-          <div className="max-w-xl mb-12">
-            <span className="text-xs font-semibold tracking-[0.15em] uppercase"
-              style={{ color: "var(--brand)" }}>
-              The team
-            </span>
-            <h2 className="mt-3 text-2xl font-bold tracking-tight text-foreground">
-              [PLACEHOLDER: Team section to be added]
-            </h2>
-            <p className="mt-3 text-base" style={{ color: "var(--fg-secondary)" }}>
-              Team biographies and profiles will be added here. Contact us to learn more about the team behind AYORA.
-            </p>
           </div>
         </Container>
       </section>

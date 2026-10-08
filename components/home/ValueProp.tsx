@@ -4,7 +4,7 @@ const props = [
   {
     label: "Outcome-Focused Delivery",
     description:
-      "We define success in business terms — cost reduction, time savings, revenue impact — not just model accuracy or deployment velocity.",
+      "We define success in business terms - cost reduction, time savings, revenue impact - not just model accuracy or deployment velocity.",
   },
   {
     label: "Enterprise-Grade Architecture",
@@ -14,7 +14,7 @@ const props = [
   {
     label: "Pragmatic AI Adoption",
     description:
-      "We match the right AI approach to each problem — avoiding over-engineering and focusing on what actually works in production.",
+      "We match the right AI approach to each problem - avoiding over-engineering and focusing on what actually works in production.",
   },
 ];
 

@@ -3,7 +3,6 @@ import PageHero from "@/components/shared/PageHero";
 import CTABanner from "@/components/shared/CTABanner";
 import Container from "@/components/ui/Container";
 import Badge from "@/components/ui/Badge";
-import Link from "next/link";
 import { caseStudies } from "@/lib/content/case-studies";
 
 export const metadata: Metadata = {
@@ -17,7 +16,7 @@ export default function CaseStudiesPage() {
     <>
       <PageHero
         eyebrow="Case Studies"
-        title="AI delivered — real outcomes, real organisations"
+        title="AI delivered - real outcomes, real organisations"
         subtitle="A selection of engagements across industries. Client names are disclosed upon request where confidentiality applies."
       />
 
@@ -25,10 +24,9 @@ export default function CaseStudiesPage() {
         <Container>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             {caseStudies.map((cs) => (
-              <Link
+              <article
                 key={cs.id}
-                href={`/case-studies/${cs.slug}`}
-                className="group flex flex-col gap-5 rounded-xl border p-7 transition-all duration-200 hover:border-border-mid"
+                className="flex flex-col gap-5 rounded-xl border p-7"
                 style={{
                   background: "var(--bg-surface)",
                   borderColor: "var(--border)",
@@ -38,7 +36,7 @@ export default function CaseStudiesPage() {
                   <Badge variant="brand">{cs.industry}</Badge>
                 </div>
 
-                <h2 className="text-lg font-semibold text-foreground leading-snug group-hover:text-brand transition-colors duration-150">
+                <h2 className="text-lg font-semibold text-foreground leading-snug">
                   {cs.title}
                 </h2>
 
@@ -67,14 +65,7 @@ export default function CaseStudiesPage() {
                   ))}
                 </div>
 
-                <span className="flex items-center gap-1.5 text-sm font-semibold mt-auto"
-                  style={{ color: "var(--brand)" }}>
-                  Read more
-                  <svg className="w-4 h-4" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                  </svg>
-                </span>
-              </Link>
+              </article>
             ))}
           </div>
         </Container>

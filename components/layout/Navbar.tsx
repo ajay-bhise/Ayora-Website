@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import MobileMenu from "./MobileMenu";
 
@@ -41,17 +42,15 @@ export default function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 font-bold text-xl tracking-tight text-foreground"
+              className="flex shrink-0 items-center"
             >
-              <span className="inline-block w-7 h-7 rounded-md flex items-center justify-center"
-                style={{ background: "var(--brand)" }}>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 2L14 13H2L8 2Z" fill="white" />
-                </svg>
-              </span>
-              <span>
-                AYOR<span style={{ color: "var(--brand)" }}>A</span>
-              </span>
+              <Image
+                src="/ayora-wordmark.png"
+                width={1203}
+                height={458}
+                alt="Ayora AI"
+                className="h-10 w-auto brightness-150 sm:h-11"
+              />
             </Link>
 
             {/* Desktop nav */}

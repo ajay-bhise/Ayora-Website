@@ -12,13 +12,13 @@ const steps = [
     number: "02",
     title: "Design",
     description:
-      "We architect the solution — model selection, data strategy, integration design, and a phased delivery roadmap — with your team.",
+      "We architect the solution - model selection, data strategy, integration design, and a phased delivery roadmap - with your team.",
   },
   {
     number: "03",
     title: "Deliver",
     description:
-      "Agile, incremental delivery with regular demonstrations. Early value realisation built into every sprint — not just at go-live.",
+      "Agile, incremental delivery with regular demonstrations. Early value realisation built into every sprint - not just at go-live.",
   },
   {
     number: "04",
@@ -40,7 +40,7 @@ export default function EngagementProcess() {
         />
 
         <div className="relative">
-          {/* Connector line — desktop */}
+          {/* Connector line - desktop */}
           <div
             className="hidden lg:block absolute top-10 left-[calc(12.5%+1px)] right-[calc(12.5%+1px)] h-px"
             style={{ background: "var(--border-mid)" }}

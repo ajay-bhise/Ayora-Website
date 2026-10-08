@@ -31,10 +31,9 @@ export default function CaseStudiesStrip() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {featured.map((cs) => (
-            <Link
+            <article
               key={cs.id}
-              href={`/case-studies/${cs.slug}`}
-              className="group flex flex-col gap-5 rounded-xl border p-6 transition-all duration-200 hover:border-border-mid"
+              className="flex flex-col gap-5 rounded-xl border p-6"
               style={{
                 background: "var(--bg-surface)",
                 borderColor: "var(--border)",
@@ -43,7 +42,7 @@ export default function CaseStudiesStrip() {
               {/* Industry tag */}
               <Badge variant="brand">{cs.industry}</Badge>
 
-              <h3 className="text-base font-semibold text-foreground leading-snug group-hover:text-brand transition-colors duration-150">
+              <h3 className="text-base font-semibold text-foreground leading-snug">
                 {cs.title}
               </h3>
 
@@ -73,7 +72,7 @@ export default function CaseStudiesStrip() {
                   <Badge key={tag} variant="muted">{tag}</Badge>
                 ))}
               </div>
-            </Link>
+            </article>
           ))}
         </div>
       </Container>

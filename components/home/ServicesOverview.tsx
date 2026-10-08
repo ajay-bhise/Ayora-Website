@@ -11,7 +11,7 @@ export default function ServicesOverview() {
           <SectionHeader
             eyebrow="Our Services"
             title="What we deliver"
-            subtitle="End-to-end AI and technology consulting — from strategy through to scaled deployment."
+            subtitle="End-to-end AI and technology consulting - from strategy through to scaled deployment."
             align="left"
           />
           <Link

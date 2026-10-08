@@ -27,7 +27,7 @@ export default function TechEcosystem() {
         <SectionHeader
           eyebrow="Technology Ecosystem"
           title="The platforms we work with"
-          subtitle="We are platform-agnostic and select the right technology for each engagement — no single-vendor lock-in."
+          subtitle="We are platform-agnostic and select the right technology for each engagement - no single-vendor lock-in."
           className="mb-14"
         />
 

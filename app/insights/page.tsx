@@ -7,7 +7,7 @@ import Badge from "@/components/ui/Badge";
 export const metadata: Metadata = {
   title: "Insights",
   description:
-    "AYORA's thinking on enterprise AI, generative AI, intelligent automation, and AI strategy — practical perspectives for technology and business leaders.",
+    "AYORA's thinking on enterprise AI, generative AI, intelligent automation, and AI strategy - practical perspectives for technology and business leaders.",
 };
 
 const placeholderPosts = [
@@ -24,7 +24,7 @@ const placeholderPosts = [
     slug: "agentic-ai-enterprise-reality",
     title: "Agentic AI in the Enterprise: Hype vs. Reality",
     summary:
-      "AI agents are generating significant excitement. Here's an honest assessment of where they create genuine value today — and where the limitations still matter.",
+      "AI agents are generating significant excitement. Here's an honest assessment of where they create genuine value today - and where the limitations still matter.",
     category: "AI Agents",
     readMinutes: 10,
     publishedAt: "2026-09-02",
@@ -33,7 +33,7 @@ const placeholderPosts = [
     slug: "rag-graphrag-choosing-right-approach",
     title: "RAG vs GraphRAG: Choosing the Right Approach",
     summary:
-      "A technical and practical guide to retrieval-augmented generation — when standard RAG is sufficient and when graph-based retrieval adds real value.",
+      "A technical and practical guide to retrieval-augmented generation - when standard RAG is sufficient and when graph-based retrieval adds real value.",
     category: "Architecture",
     readMinutes: 12,
     publishedAt: "2026-08-20",
@@ -42,7 +42,7 @@ const placeholderPosts = [
     slug: "microsoft-copilot-deployment-lessons",
     title: "Five Lessons from Enterprise Copilot Deployments",
     summary:
-      "What we've learned deploying Microsoft Copilot across enterprise clients — the configuration decisions that matter, the adoption challenges, and the quick wins.",
+      "What we've learned deploying Microsoft Copilot across enterprise clients - the configuration decisions that matter, the adoption challenges, and the quick wins.",
     category: "Microsoft AI",
     readMinutes: 7,
     publishedAt: "2026-08-05",
@@ -55,7 +55,7 @@ export default function InsightsPage() {
       <PageHero
         eyebrow="Insights"
         title="Practical thinking on enterprise AI"
-        subtitle="Perspectives from AYORA's delivery work — for technology leaders navigating AI adoption."
+        subtitle="Perspectives from AYORA's delivery work - for technology leaders navigating AI adoption."
       />
 
       <section className="py-20" style={{ background: "var(--bg)" }}>

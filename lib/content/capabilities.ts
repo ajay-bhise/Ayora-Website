@@ -54,7 +54,7 @@ export const capabilities: Capability[] = [
     id: "custom-ai",
     label: "Custom AI Application Development",
     description:
-      "Full-stack AI application engineering — from model integration and API design to production-grade deployment and monitoring.",
+      "Full-stack AI application engineering - from model integration and API design to production-grade deployment and monitoring.",
     icon: "M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4",
   },
 ];

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import CopyrightYear from "@/components/ui/CopyrightYear";
 
 const serviceLinks = [
@@ -28,19 +29,15 @@ export default function Footer() {
           <div className="col-span-1 sm:col-span-2 lg:col-span-1">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 font-bold text-xl tracking-tight text-foreground mb-4"
+              className="mb-4 inline-flex items-center"
             >
-              <span
-                className="inline-flex w-7 h-7 rounded-md items-center justify-center"
-                style={{ background: "var(--brand)" }}
-              >
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-                  <path d="M8 2L14 13H2L8 2Z" fill="white" />
-                </svg>
-              </span>
-              <span>
-                AYOR<span style={{ color: "var(--brand)" }}>A</span>
-              </span>
+              <Image
+                src="/ayora-wordmark.png"
+                width={1203}
+                height={458}
+                alt="Ayora AI"
+                className="h-12 w-auto brightness-150"
+              />
             </Link>
             <p
               className="text-sm leading-relaxed max-w-xs"
@@ -100,12 +97,11 @@ export default function Footer() {
             </h3>
             <address className="not-italic flex flex-col gap-2.5 text-sm"
               style={{ color: "var(--fg-secondary)" }}>
-              <span>[PLACEHOLDER: City, Country]</span>
               <a
-                href="mailto:hello@ayoraai.com"
+                href="mailto:contactayoraai@gmail.com"
                 className="transition-colors duration-150 hover:text-foreground"
               >
-                hello@ayoraai.com
+                contactayoraai@gmail.com
               </a>
             </address>
           </div>

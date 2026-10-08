@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import PageHero from "@/components/shared/PageHero";
 import Container from "@/components/ui/Container";
-import ContactForm from "@/components/shared/ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -15,18 +14,12 @@ export default function ContactPage() {
       <PageHero
         eyebrow="Contact"
         title="Let's start a conversation"
-        subtitle="Tell us about your challenges and goals. We'll get back to you within one business day."
+        subtitle="Email us about your challenges and goals. We'll get back to you within one business day."
       />
 
       <section className="py-20" style={{ background: "var(--bg)" }}>
         <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Left: form */}
-            <div>
-              <ContactForm />
-            </div>
-
-            {/* Right: contact details */}
+          <div className="mx-auto max-w-xl">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-4">
                 <h2 className="text-lg font-semibold text-foreground">
@@ -38,14 +31,9 @@ export default function ContactPage() {
                       style={{ color: "var(--fg-muted)" }}>
                       Email
                     </span>
-                    <span>hello@ayoraai.com</span>
-                  </div>
-                  <div className="flex flex-col gap-1">
-                    <span className="text-xs font-semibold tracking-wider uppercase"
-                      style={{ color: "var(--fg-muted)" }}>
-                      Location
-                    </span>
-                    <span>[PLACEHOLDER: City, Country]</span>
+                    <a href="mailto:contactayoraai@gmail.com" className="hover:text-foreground">
+                      contactayoraai@gmail.com
+                    </a>
                   </div>
                 </div>
               </div>
@@ -64,7 +52,7 @@ export default function ContactPage() {
                   {[
                     "Response within one business day",
                     "Initial 30-minute discovery call at no cost",
-                    "No sales pressure — just an honest conversation",
+                    "No sales pressure - just an honest conversation",
                     "Clear next steps agreed before we proceed",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-2.5">

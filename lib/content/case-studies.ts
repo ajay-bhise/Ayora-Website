@@ -18,11 +18,11 @@ export const caseStudies: CaseStudy[] = [
   {
     id: "cs-002",
     slug: "enterprise-copilot-professional-services",
-    title: "Enterprise-wide Copilot Deployment for [PLACEHOLDER: Client Name]",
+    title: "Enterprise-wide Copilot Deployment for a Professional Services Firm",
     client: null,
     industry: "Professional Services",
     summary:
-      "AYORA designed and deployed a customized Microsoft Copilot solution integrated with the client's internal knowledge base, project management systems, and reporting tools — enabling AI-assisted delivery at scale.",
+      "AYORA designed and deployed a customized Microsoft Copilot solution integrated with the client's internal knowledge base, project management systems, and reporting tools - enabling AI-assisted delivery at scale.",
     challenge:
       "Teams were spending excessive time on knowledge retrieval, report drafting, and administrative tasks that limited billable capacity.",
     result:
@@ -36,7 +36,7 @@ export const caseStudies: CaseStudy[] = [
     client: null,
     industry: "Operations & Logistics",
     summary:
-      "AYORA architected a multi-agent AI system to automate complex, multi-step operational workflows — combining LLM reasoning with real-time system integrations and human-in-the-loop checkpoints.",
+      "AYORA architected a multi-agent AI system to automate complex, multi-step operational workflows - combining LLM reasoning with real-time system integrations and human-in-the-loop checkpoints.",
     challenge:
       "High-volume operational processes required coordination across multiple systems with inconsistent data formats and minimal automation tooling.",
     result:

@@ -14,7 +14,7 @@ const industries = [
     id: "financial-services",
     title: "Financial Services",
     description:
-      "AI solutions for financial services organisations — from intelligent document processing for loan origination and compliance, to AI-augmented risk analytics and regulatory reporting automation.",
+      "AI solutions for financial services organisations - from intelligent document processing for loan origination and compliance, to AI-augmented risk analytics and regulatory reporting automation.",
     useCases: [
       "Loan and contract document processing",
       "Regulatory and compliance reporting",
@@ -27,7 +27,7 @@ const industries = [
     id: "professional-services",
     title: "Professional Services",
     description:
-      "Productivity and quality solutions for consulting, legal, and advisory firms — embedding AI into knowledge work, proposal generation, and delivery operations.",
+      "Productivity and quality solutions for consulting, legal, and advisory firms - embedding AI into knowledge work, proposal generation, and delivery operations.",
     useCases: [
       "Enterprise knowledge retrieval (RAG)",
       "Proposal and report generation",
@@ -40,7 +40,7 @@ const industries = [
     id: "operations",
     title: "Operations & Logistics",
     description:
-      "AI and automation solutions that optimise high-volume operational processes — combining intelligent document processing, AI agents, and workflow automation.",
+      "AI and automation solutions that optimise high-volume operational processes - combining intelligent document processing, AI agents, and workflow automation.",
     useCases: [
       "Intelligent order and invoice processing",
       "Agentic workflow automation",
@@ -53,7 +53,7 @@ const industries = [
     id: "healthcare",
     title: "Healthcare & Life Sciences",
     description:
-      "[PLACEHOLDER] Solutions for healthcare and life sciences organisations — clinical documentation, research analytics, and regulatory compliance.",
+      "[PLACEHOLDER] Solutions for healthcare and life sciences organisations - clinical documentation, research analytics, and regulatory compliance.",
     useCases: [
       "Clinical note processing",
       "Medical literature analysis",

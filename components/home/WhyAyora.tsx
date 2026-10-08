@@ -4,12 +4,12 @@ const differentiators = [
   {
     title: "Deep AI Engineering Capability",
     description:
-      "Our team combines AI research knowledge with enterprise engineering discipline — we can design architectures and build the software, not just advise on it.",
+      "Our team combines AI research knowledge with enterprise engineering discipline - we can design architectures and build the software, not just advise on it.",
   },
   {
     title: "Platform-Agnostic Approach",
     description:
-      "We select the right model, platform, and tooling for each client's context — Azure OpenAI, open-source models, or hybrid architectures — without vendor lock-in.",
+      "We select the right model, platform, and tooling for each client's context - Azure OpenAI, open-source models, or hybrid architectures - without vendor lock-in.",
   },
   {
     title: "Enterprise-Ready from Day One",
@@ -41,7 +41,7 @@ export default function WhyAyora() {
               Built for the complexity of real enterprise AI
             </h2>
             <p className="text-base leading-relaxed" style={{ color: "var(--fg-secondary)" }}>
-              Most AI projects fail not because the technology doesn&apos;t work, but because the delivery approach doesn&apos;t account for enterprise reality — legacy systems, governance requirements, and organisational change. We do.
+              Most AI projects fail not because the technology doesn&apos;t work, but because the delivery approach doesn&apos;t account for enterprise reality - legacy systems, governance requirements, and organisational change. We do.
             </p>
 
             {/* Decorative line element */}

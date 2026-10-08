@@ -15,7 +15,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Corner glow — top left */}
+      {/* Corner glow - top left */}
       <div
         className="absolute -top-32 -left-32 w-[600px] h-[600px] rounded-full pointer-events-none"
         style={{
@@ -25,7 +25,7 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      {/* Corner glow — bottom right, faint */}
+      {/* Corner glow - bottom right, faint */}
       <div
         className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full pointer-events-none"
         style={{

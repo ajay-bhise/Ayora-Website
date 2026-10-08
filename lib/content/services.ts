@@ -5,7 +5,7 @@ export const services: Service[] = [
     id: "generative-ai",
     title: "Generative AI Solutions",
     description:
-      "We design and build production-grade generative AI applications — from conversational assistants and content generation platforms to domain-specific LLM solutions grounded in your enterprise data.",
+      "We design and build production-grade generative AI applications - from conversational assistants and content generation platforms to domain-specific LLM solutions grounded in your enterprise data.",
     capabilities: [
       "LLM selection and fine-tuning",
       "Prompt engineering and guardrails",
@@ -44,7 +44,7 @@ export const services: Service[] = [
     id: "data-analytics",
     title: "AI-powered Data & Analytics",
     description:
-      "We integrate AI into your data strategy — building intelligent pipelines, AI-augmented dashboards, and predictive models that turn your data estate into a competitive advantage.",
+      "We integrate AI into your data strategy - building intelligent pipelines, AI-augmented dashboards, and predictive models that turn your data estate into a competitive advantage.",
     capabilities: [
       "Data platform modernization",
       "Predictive and prescriptive analytics",
@@ -57,7 +57,7 @@ export const services: Service[] = [
     id: "custom-ai-dev",
     title: "Custom AI Application Development",
     description:
-      "We engineer bespoke AI applications from the ground up — combining the right models, APIs, and architectures with a rigorous delivery process to ship production-ready software.",
+      "We engineer bespoke AI applications from the ground up - combining the right models, APIs, and architectures with a rigorous delivery process to ship production-ready software.",
     capabilities: [
       "Full-stack AI engineering",
       "Model evaluation and selection",
