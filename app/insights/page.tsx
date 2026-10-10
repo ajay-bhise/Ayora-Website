@@ -18,7 +18,7 @@ const placeholderPosts = [
       "What separates a successful enterprise AI deployment from a proof of concept that never ships. A practical checklist for technology leaders.",
     category: "Generative AI",
     readMinutes: 8,
-    publishedAt: "2026-09-15",
+    publishedAt: "2026-10-07",
   },
   {
     slug: "agentic-ai-enterprise-reality",
@@ -27,7 +27,7 @@ const placeholderPosts = [
       "AI agents are generating significant excitement. Here's an honest assessment of where they create genuine value today - and where the limitations still matter.",
     category: "AI Agents",
     readMinutes: 10,
-    publishedAt: "2026-09-02",
+    publishedAt: "2026-10-07",
   },
   {
     slug: "rag-graphrag-choosing-right-approach",
@@ -36,7 +36,7 @@ const placeholderPosts = [
       "A technical and practical guide to retrieval-augmented generation - when standard RAG is sufficient and when graph-based retrieval adds real value.",
     category: "Architecture",
     readMinutes: 12,
-    publishedAt: "2026-08-20",
+    publishedAt: "2026-10-07",
   },
   {
     slug: "microsoft-copilot-deployment-lessons",
@@ -45,7 +45,7 @@ const placeholderPosts = [
       "What we've learned deploying Microsoft Copilot across enterprise clients - the configuration decisions that matter, the adoption challenges, and the quick wins.",
     category: "Microsoft AI",
     readMinutes: 7,
-    publishedAt: "2026-08-05",
+    publishedAt: "2026-10-07",
   },
 ];
 
@@ -88,7 +88,12 @@ export default function InsightsPage() {
                 <div className="flex items-center justify-between mt-auto pt-2">
                   <time className="text-xs" style={{ color: "var(--fg-muted)" }}
                     dateTime={post.publishedAt}>
-                    {post.publishedAt}
+                    {new Date(post.publishedAt).toLocaleDateString("en-GB", {
+                      day: "numeric",
+                      month: "long",
+                      year: "numeric",
+                      timeZone: "UTC",
+                    })}
                   </time>
                   <span className="text-sm font-semibold flex items-center gap-1.5"
                     style={{ color: "var(--brand)" }}>
